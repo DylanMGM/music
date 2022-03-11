@@ -5,7 +5,7 @@ File Name: styles.css
 */
 
 /*CSS Reset*/
-body, header, nav, main, footer, img, h1, ul{
+body, header, nav, main, footer, img, h1, ul, section, aside, figure{
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,6 +15,11 @@ body, header, nav, main, footer, img, h1, ul{
 img{
     max-width: 100%;
     display: block;
+}
+
+/*Style rules for box sizing applies to all elements*/
+*{
+    box-sizing: border-box;
 }
 
 /*Style rules for mobile viewport*/
@@ -69,6 +74,34 @@ main{
 
 main p{
     font-size: 1.25em;
+}
+
+figure{
+    position: relative;
+    max-width: 275px;
+    margin: auto;
+    border: 8px solid #373684;
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0;
+    background: rgba(55, 54, 132, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 5% 0%;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+aside{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #373684;
+    text-shadow: 3px 3px 10px #8280cb;
 }
 
 .action{
@@ -178,6 +211,17 @@ footer a{
         height: 450px;
     }
 
+    /*Tablet Viewport: Style rules for main area*/
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .aside{
+        grid-column: 1/span 2;
+    }
+
 }
 
 /*Media Query for Desktop Viewport*/
@@ -198,6 +242,14 @@ footer a{
         background-color: #e5e9fc;
     }
 
+    figcaption{
+        font-size: 1em;
+    }
+
+    aside{
+        grid-column: 1/span 4;
+    }
+
     /*Desktop Viewport: Style rules for main content*/
     #info ul{
         margin-left: 5%;
@@ -211,6 +263,10 @@ footer a{
         width: 29%;
         float: left;
         margin: 0 2%;
+    }
+
+    .grid{
+        grid-template-columns: auto auto auto auto;
     }
 
 }
