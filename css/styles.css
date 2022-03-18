@@ -128,7 +128,7 @@ aside{
     border-radius: 8px;
 }
 
-#contact, #form h2{
+#contact, #form h2, #rental h2{
     text-align: center;
 }
 
@@ -185,7 +185,7 @@ th{
     font-size: 1.15em;
 }
 
-th:nth-child(odd){
+td:nth-child(odd){
     background-color: #b7b7e1;
 }
 
