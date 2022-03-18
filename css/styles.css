@@ -128,7 +128,7 @@ aside{
     border-radius: 8px;
 }
 
-#contact{
+#contact, #form h2{
     text-align: center;
 }
 
@@ -158,6 +158,58 @@ aside{
     border: 5px solid #373684;
     width: 95%;
     height: 50%;
+}
+
+/*Style rule for table*/
+table{
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th,td{
+    border: 1px solid #373684;
+    padding: 2%;
+}
+
+th{
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+th:nth-child(odd){
+    background-color: #b7b7e1;
+}
+
+/*Style rules for form elements*/
+fieldset, input{
+    margin-bottom: 2%;
+}
+
+fieldset legend{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label{
+    display: block;
+    padding-top: 3%;
+}
+
+#submit{
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
 }
 
 /*Style rules for footer content*/
@@ -209,6 +261,12 @@ footer a{
     .map{
         width: 500px;
         height: 450px;
+    }
+
+    /*Tablet Viewport: Style rule for form element*/
+    form{
+        width: 70%;
+        margin: 0 auto;
     }
 
     /*Tablet Viewport: Style rules for main area*/
@@ -267,6 +325,22 @@ footer a{
 
     .grid{
         grid-template-columns: auto auto auto auto;
+    }
+
+    /*Desktop Viewport: Style rules for table*/
+    table{
+        width: 70%;
+    }
+
+    /*Desktop Viewport: Style rules for form elements*/
+    .form-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn{
+        grid-column: 1/span 2;
     }
 
 }
