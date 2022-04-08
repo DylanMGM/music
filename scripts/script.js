@@ -1,5 +1,5 @@
 /*
-    Name: Dylan Garcia
+    Student Name: Dylan Garcia
     File name: script.js
     Date: 04/08/2022
 */
